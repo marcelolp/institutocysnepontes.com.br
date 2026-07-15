@@ -447,10 +447,6 @@
     margin-top:10px;
   }
   .medicos-wrap{
-    display:grid;
-    grid-template-columns:0.9fr 1.1fr;
-    gap:56px;
-    align-items:center;
     background:#fff;
     border-radius:28px;
     padding:20px;
@@ -458,13 +454,17 @@
     border:1px solid var(--line);
   }
   .medicos-photo{border-radius:22px;overflow:hidden;}
-  .medicos-photo img{width:100%;object-fit:cover;aspect-ratio:3/4;}
-  .medicos-bios{padding:20px 28px 20px 0;}
-  .bio-card{
-    padding:24px 0;
-    border-bottom:1px solid var(--line);
+  .medicos-photo img{width:100%;object-fit:cover;aspect-ratio:11/6;display:block;}
+  .medicos-bios{
+    padding:32px 20px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:36px;
   }
-  .bio-card:last-child{border-bottom:none;}
+  .bio-card{
+    padding:0;
+  }
+  .bio-card + .bio-card{border-left:1px solid var(--line);padding-left:36px;}
   .bio-card h3{font-size:24px;margin-bottom:6px;}
   .bio-card .crm{
     font-size:12.5px;
@@ -640,8 +640,7 @@
     .sobre-media{order:-1;}
     .card-grid{grid-template-columns:repeat(2,1fr);}
     .dif-grid{grid-template-columns:repeat(2,1fr);}
-    .medicos-wrap{grid-template-columns:1fr;}
-    .medicos-bios{padding:0 12px 12px;}
+    .medicos-photo img{aspect-ratio:4/3;}
     .step-grid{grid-template-columns:repeat(2,1fr);row-gap:40px;}
     .contato-grid{grid-template-columns:1fr;}
     .stats-grid{grid-template-columns:repeat(3,1fr);row-gap:28px;gap:12px;}
@@ -662,6 +661,9 @@
     .card-grid{grid-template-columns:1fr;}
     .dif-grid{grid-template-columns:1fr;}
     .step-grid{grid-template-columns:1fr;}
+    .medicos-photo img{aspect-ratio:4/3;}
+    .medicos-bios{grid-template-columns:1fr;gap:24px;}
+    .bio-card + .bio-card{border-left:none;padding-left:0;padding-top:24px;border-top:1px solid var(--line);}
     .sobre h2, .section-head h2, .medicos-head h2, .cta-final h2{font-size:30px;}
     .footer-top{flex-direction:column;}
     .footer-cols{gap:40px;}
@@ -880,7 +882,7 @@
     </div>
     <div class="medicos-wrap reveal">
       <div class="medicos-photo">
-        <img src="medicos.jpg" alt="Dr. Marcelo Lima Pontes e Dra. Marcella Melo e Cysne, médicos do Instituto Cysne Pontes">
+        <img src="medicos-consultorio.jpg" alt="Dr. Marcelo Lima Pontes e Dra. Marcella Melo e Cysne no consultório do Instituto Cysne Pontes">
       </div>
       <div class="medicos-bios">
         <div class="bio-card">
