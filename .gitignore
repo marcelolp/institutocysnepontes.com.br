@@ -1,0 +1,8 @@
+# Nunca versionar senhas, credenciais ou anotações sensíveis
+*senha*
+*password*
+*credencial*
+*.env
+*.key
+*.pem
+code.txt
