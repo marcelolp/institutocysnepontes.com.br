@@ -398,38 +398,42 @@
   .t-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -20px rgba(42,38,32,0.3);}
   .t-icon{
     width:56px;height:56px;
-    border-radius:14px;
-    background:var(--cream-alt);
+    border-radius:50%;
+    border:1.5px solid var(--gold-light);
     display:flex;align-items:center;justify-content:center;
     margin-bottom:22px;
   }
-  .t-icon svg{width:26px;height:26px;color:var(--gold-dark);}
+  .t-icon svg{width:24px;height:24px;color:var(--gold-dark);}
   .t-card h3{font-size:21px;margin-bottom:10px;}
   .t-card p{font-size:14.5px;color:var(--charcoal-soft);}
 
   /* ---------- DIFERENCIAIS ---------- */
-  .diferenciais{background:var(--charcoal);color:var(--cream);}
-  .diferenciais .eyebrow{color:var(--gold-light);}
-  .diferenciais .eyebrow::before{background:var(--gold-light);}
-  .diferenciais .section-head h2{color:#fff;}
-  .diferenciais .section-head p{color:rgba(250,246,239,0.65);}
+  .diferenciais{background:var(--cream-alt);}
   .dif-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:1px;
-    background:rgba(255,255,255,0.1);
+    background:var(--line);
     border-radius:var(--radius);
     overflow:hidden;
+    border:1px solid var(--line);
   }
   .dif-item{
-    background:#332f27;
+    background:#fff;
     padding:34px 30px;
     display:flex;
     gap:16px;
   }
-  .dif-item svg{width:22px;height:22px;color:var(--gold-light);flex-shrink:0;margin-top:2px;}
-  .dif-item h4{font-family:'Jost',sans-serif;font-weight:500;font-size:15.5px;color:#fff;margin-bottom:6px;}
-  .dif-item p{font-size:13.5px;color:rgba(250,246,239,0.6);}
+  .dif-item .dif-icon{
+    width:44px;height:44px;
+    border-radius:50%;
+    border:1.5px solid var(--gold-light);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .dif-item svg{width:20px;height:20px;color:var(--gold-dark);}
+  .dif-item h4{font-family:'Jost',sans-serif;font-weight:500;font-size:15.5px;color:var(--charcoal);margin-bottom:6px;}
+  .dif-item p{font-size:13.5px;color:var(--charcoal-soft);}
 
   /* ---------- MEDICOS ---------- */
   .medicos{background:var(--cream);}
@@ -726,7 +730,7 @@
   <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">Emagrecimento · Tricologia · Qualidade de Vida</p>
-      <h1>Cuidar de você é o primeiro passo para <em>cuidar de quem você ama</em>.</h1>
+      <h1>Cuidar de você é cuidar de quem você <em>ama</em>.</h1>
       <p class="lead">No Instituto Cysne Pontes você encontra um cuidado médico individualizado para emagrecer com saúde, tratar a queda de cabelo e recuperar a confiança em cada etapa da sua vida — em Fortaleza-CE.</p>
       <div class="hero-actions">
         <a href="https://wa.me/5585991394326?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20no%20Instituto%20Cysne%20Pontes." target="_blank" rel="noopener" class="btn btn-primary">
@@ -774,7 +778,7 @@
     </div>
     <div class="sobre-text reveal">
       <p class="eyebrow">Sobre o Instituto</p>
-      <h2>Saúde, autoestima e qualidade de vida — para você e para quem você ama.</h2>
+      <h2>Saúde, autoestima e qualidade de vida.</h2>
       <p>O Instituto Cysne Pontes nasceu para oferecer um cuidado médico completo a adultos que decidiram priorizar a própria saúde: perder peso com segurança, tratar a queda de cabelo e recuperar o bem-estar físico e emocional.</p>
       <p>Acreditamos que autoestima se constrói com resultado real, acompanhamento próximo e escuta genuína. Cada protocolo é pensado individualmente, porque cada história é única — e porque sabemos que quando você cuida de você, toda a sua família sente a diferença.</p>
       <div class="sobre-quote">
@@ -827,39 +831,39 @@
     </div>
     <div class="dif-grid">
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg></div>
         <div><h4>Atendimento Individualizado</h4><p>Cada paciente é ouvido e tratado de forma única, do primeiro contato ao acompanhamento contínuo.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="7" rx="2"/><path d="M7 11V8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="7" rx="2"/><path d="M7 11V8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg></div>
         <div><h4>Exame Físico com Bioimpedância</h4><p>Avaliação completa da composição corporal para um diagnóstico preciso e um protocolo sob medida.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
         <div><h4>Aparelhos de Última Geração</h4><p>Tecnologia médica atualizada para diagnósticos mais rápidos e tratamentos mais eficazes.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
         <div><h4>Protocolo Individualizado</h4><p>Nenhum tratamento é padrão: cada plano é construído a partir da sua história e dos seus objetivos.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/><path d="M12 22V12"/><path d="M21 6.9L12 12 3 6.9"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l9 4.9v10.2L12 22l-9-4.9V6.9L12 2z"/><path d="M12 22V12"/><path d="M21 6.9L12 12 3 6.9"/></svg></div>
         <div><h4>Equipe com Registro de Especialidade</h4><p>Médicos com CRM e RQE, reconhecidos por sociedades médicas em suas áreas de atuação.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 14V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v8"/><path d="M3 14h18l-1.5 6h-15z"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 14V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v8"/><path d="M3 14h18l-1.5 6h-15z"/></svg></div>
         <div><h4>Exames e Infusões no Local</h4><p>Praticidade e segurança: diversos exames e infusões são realizados na própria clínica.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
         <div><h4>Recepção com Concierge</h4><p>Um ambiente acolhedor desde a chegada, pensado para o seu conforto em cada visita.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8 12l3 3 5-6"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5A8.5 8.5 0 1 1 21 11.5z"/><path d="M8 12l3 3 5-6"/></svg></div>
         <div><h4>Pós-atendimento Personalizado</h4><p>Acompanhamos sua evolução após a consulta, com suporte contínuo em cada etapa.</p></div>
       </div>
       <div class="dif-item reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg>
+        <div class="dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z"/></svg></div>
         <div><h4>Segurança e Protocolos Clínicos</h4><p>Processos rigorosos que garantem tranquilidade em cada etapa do seu tratamento.</p></div>
       </div>
     </div>
