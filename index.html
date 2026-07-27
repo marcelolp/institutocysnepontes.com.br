@@ -231,6 +231,17 @@
   }
   nav.nav-links a:hover{color:var(--gold-dark);}
   .nav-cta{display:flex;align-items:center;gap:16px;}
+  .nav-ig{
+    width:40px;height:40px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    color:#fff;
+    flex-shrink:0;
+    transition:transform .25s ease;
+  }
+  .nav-ig:hover{transform:scale(1.08);}
+  .nav-ig svg{width:19px;height:19px;}
   .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px;}
   .burger span{width:24px;height:2px;background:var(--charcoal);display:block;}
 
@@ -458,6 +469,34 @@
   }
   .medico-card img{width:100%;object-fit:cover;aspect-ratio:4/5;display:block;}
 
+  /* ---------- INSTAGRAM ---------- */
+  .instagram-cta{
+    background:var(--cream);
+    padding:90px 0;
+    text-align:center;
+  }
+  .instagram-inner{
+    max-width:600px;
+    margin:0 auto;
+  }
+  .instagram-icon{
+    width:64px;height:64px;
+    margin:0 auto 22px;
+    border-radius:20px;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    color:#fff;
+  }
+  .instagram-icon svg{width:32px;height:32px;}
+  .instagram-cta h2{font-size:36px;margin:14px 0 16px;}
+  .instagram-cta p{color:var(--charcoal-soft);font-size:16px;margin-bottom:32px;}
+  .btn-instagram{
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    color:#fff;
+    box-shadow:0 12px 28px -10px rgba(214,41,118,0.45);
+  }
+  .btn-instagram:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(214,41,118,0.55);}
+
   /* ---------- PROCESSO ---------- */
   .processo{background:var(--cream-alt);}
   .step-grid{
@@ -678,6 +717,9 @@
       <a href="#contato">Contato</a>
     </nav>
     <div class="nav-cta">
+      <a href="https://instagram.com/institutocysnepontes" target="_blank" rel="noopener" class="nav-ig" aria-label="Seguir no Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+      </a>
       <a href="https://wa.me/5585996171100?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20no%20Instituto%20Cysne%20Pontes." target="_blank" rel="noopener" class="btn btn-primary">
         <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.94-7-2.94zm0 18.06h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.4c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.25-8.24 8.25z"/></svg>
         Agendar
@@ -696,6 +738,7 @@
   <a href="#diferenciais">Diferenciais</a>
   <a href="#contato">Contato</a>
   <a href="https://wa.me/5585996171100" target="_blank" rel="noopener" style="color:var(--gold-dark);font-weight:500;">Agendar no WhatsApp</a>
+  <a href="https://instagram.com/institutocysnepontes" target="_blank" rel="noopener" style="color:var(--gold-dark);font-weight:500;">Seguir no Instagram</a>
 </div>
 
 <!-- ================= HERO ================= -->
@@ -864,6 +907,22 @@
   </div>
 </section>
 
+<!-- ================= INSTAGRAM ================= -->
+<section class="instagram-cta" id="instagram">
+  <div class="container instagram-inner reveal">
+    <div class="instagram-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.6" cy="6.4" r="1.1"/></svg>
+    </div>
+    <p class="eyebrow" style="justify-content:center;">@institutocysnepontes</p>
+    <h2>Já é fã do nosso Instagram?</h2>
+    <p>Milhares de pessoas já acompanham nosso dia a dia por lá — transformações reais, dicas de saúde, bastidores da clínica e muito mais. Vem fazer parte dessa comunidade.</p>
+    <a href="https://instagram.com/institutocysnepontes" target="_blank" rel="noopener" class="btn btn-instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+      Seguir @institutocysnepontes
+    </a>
+  </div>
+</section>
+
 <!-- ================= PROCESSO ================= -->
 <section class="processo section-pad" id="processo">
   <div class="container">
@@ -907,7 +966,7 @@
         <svg viewBox="0 0 24 24" fill="#93763c"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.94-7-2.94z"/></svg>
         Agendar pelo WhatsApp
       </a>
-      <a href="https://instagram.com/institutocysnepontes" target="_blank" rel="noopener" class="btn btn-outline" style="border-color:#fff;color:#fff;">
+      <a href="https://instagram.com/institutocysnepontes" target="_blank" rel="noopener" class="btn btn-instagram">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1"/></svg>
         Seguir no Instagram
       </a>
